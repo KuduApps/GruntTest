@@ -1,0 +1,88 @@
+html, body {
+    height: 100%;
+}
+
+body {
+    font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+@import "vendor/bootstrap/utilities.less";
+@import "vendor/bootstrap/variables.less";
+@import "vendor/bootstrap/mixins.less";
+@import "vendor/bootstrap/grid.less";
+
+.content {
+    &:extend(.container all);
+}
+
+@import "vendor/bootstrap/forms.less";
+
+.form-group input[type="text"], 
+.form-group input[type="email"],
+.form-group input[type="password"] {
+    &:extend(.form-control);
+}
+
+.form-group input[disabled] {
+    &:extend(.form-control[disabled]);
+}
+
+.form-group input[type="text"]:focus, 
+.form-group input[type="email"]:focus,
+.form-group input[type="password"]:focus {
+    &:extend(.form-control:focus);
+}
+
+// validation
+.has-error label {
+    &:extend(.has-error .control-label all);
+}
+
+.has-error.form-group input[type="text"], 
+.has-error.form-group input[type="email"],
+.has-error.form-group input[type="password"] {
+    &:extend(.has-error .form-control all);
+}
+
+.has-success label {
+    &:extend(.has-success .control-label all);
+}
+
+.has-success.form-group input[type="text"], 
+.has-success.form-group input[type="email"],
+.has-success.form-group input[type="password"] {
+    &:extend(.has-success .form-control all);
+}
+
+.has-warning label {
+    &:extend(.has-warning .control-label all);
+}
+
+.has-warning.form-group input[type="text"], 
+.has-warning.form-group input[type="email"],
+.has-warning.form-group input[type="password"] {
+    &:extend(.has-warning .form-control all);
+}
+
+@import "vendor/bootstrap/buttons.less";
+
+button {
+    &:extend(.btn all);
+    &:extend(.btn-default all);
+}
+
+@import "vendor/bootstrap/navs.less";
+@import "vendor/bootstrap/navbar.less";
+
+nav.navbar {
+    &:extend(.navbar-default all);
+}
+
+nav.navbar ul {
+    &:extend(.nav all);
+    &:extend(.navbar-nav all);
+}
+
+a {
+    text-decoration: none;
+}

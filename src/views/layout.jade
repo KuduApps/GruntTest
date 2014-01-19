@@ -1,0 +1,22 @@
+doctype html
+
+- var title = 'Express';
+- if (subtitle) {
+-   title = title + ' - ' + subtitle;
+- }
+
+html
+  head
+    title= title
+    link(rel='stylesheet', href='css/normalize.min.css')
+    link(rel='stylesheet', href='css/style.min.css')
+    //- link(rel='stylesheet', href='css/style.css')
+  body.content
+    nav#header.navbar(role='navigation')
+      div.navbar-header
+        a.navbar-brand(href='#') Brand
+    block body
+    //script tags
+    script(type='text/javascript', src='js/jquery-1.10.2.min.js')
+    script(type='text/javascript', src='js/bootstrap.js')
+    block scripts

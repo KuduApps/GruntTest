@@ -1,0 +1,31 @@
+{
+  "name": "meekoo",
+  "version": "0.1.0",
+  "description": "",
+  "bodyParser": true,
+  "main": "app.js",
+  "keywords": [],
+  "author": "",
+  "maintainers": [],
+  "contributors": [],
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "preferGlobal": false,
+  "dependencies": {
+    "node-uuid": "~1.4.1",
+    "express": "~3.4.6",
+    "nconf": "~0.6.9",
+    "jade": "~1.1.4",
+    "when": "~2.7.1",
+    "azure": "~0.8.0"
+  },
+  "license": "",
+  "private": true,
+  "devDependencies": {
+    "grunt-contrib-copy": "0.5.x",
+    "grunt-contrib-less": "0.8.x",
+    "grunt-contrib-watch": "0.5.x"
+  }
+}
